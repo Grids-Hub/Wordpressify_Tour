@@ -1,21 +1,13 @@
-
-
 <?php
-
-
-
 //CSS
-
 function add_css()
 {
-   wp_register_style('font', get_template_directory_uri() . './Assets/CSS/style.css', false,'1.1','all');
+   wp_register_style('font', get_template_directory_uri() . './Assets/CSS/main.css', false,'1.1','all');
    wp_enqueue_style( 'font');
 }
 add_action('wp_enqueue_scripts', 'add_css');//hook function
 
 // Google Fonts
-
-
 function wpb_add_google_fonts() {
     wp_enqueue_style( 'wpb-google-fontsfirst', 'https://fonts.googleapis.com/css2?family=Inter|Playfair+Display|Mulish:wght@100&display=swap', false );
     
@@ -24,10 +16,7 @@ function wpb_add_google_fonts() {
     
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
-
-
 //Navigation Bar
-
 function add_nav_menu(){
     
     register_nav_menus(array(
@@ -35,20 +24,13 @@ function add_nav_menu(){
         "secondary-menu" => __("Secondary Menu" , 'text_domain'),
     ));
 }
-
-
-
 add_action('init' , 'add_nav_menu');
 
 function add_link_atts($atts){
     $atts['class'] = 'nav-link ';
     return $atts;
 }
-
-
-
 add_filter('nav_menu_link_attributes','add_link_atts');
-
 
 function add_list_atts($atts){
     $atts['class'] = 'nav-item al';
@@ -56,10 +38,6 @@ function add_list_atts($atts){
 }
 
 add_filter('nav_menu_css_class','add_list_atts');
-
-
-
-
 
 
 
@@ -129,13 +107,10 @@ add_action( 'widgets_init', 'my_widgets_init' );
 
 //Custom Post Type
 
-
 add_theme_support('post-thumbnails');
-
 add_action('init', 'create_custom_post_type');
  
 function create_custom_post_type() {
- 
 $labels = array(
 	'name' => _x( 'Destinations', 'destinations' ),
 	'singular_name' => _x( 'destinations', 'destinations' ),

@@ -1,9 +1,4 @@
-<?php  
-
-
-get_header(); ?>
-
-
+<?php  get_header(); ?>
 <?php $homepage = get_field("homepage");
 $about = get_field('about_us');
 $feature = get_field("feature_destination");
@@ -12,11 +7,7 @@ $testimonial = get_field("testinomial");
 $story = get_field("stories");
 
 ?>
-
-
     <!-- HomePAge -->
-
-
     <div class="container">
 
         <div class="row">
@@ -67,8 +58,6 @@ $story = get_field("stories");
 
 
     <!-- Second Page -->
-
-
     <div class="container my-5 py-5" id="about">
         <div class="row second pt-5">
             <div
@@ -102,13 +91,8 @@ $story = get_field("stories");
         </div>
     </div>  
 
-
     <!-- Feature Destination -->
-
-   
-
     <?php
-    
         // check if the repeater field has rows of data
         if( have_rows('feature_destination') ):?>
 
@@ -120,8 +104,6 @@ $story = get_field("stories");
                         
                     </div>
                     <div class="col-xxl col-lg-6 col-md-12 d-flex justify-content-end featureview">
-
-
                         <?php if($feature['link']):?>
                             <a href="<?php echo $feature['link']; ?>" class="text-warning"><img class="mx-5 px-5  pb-5" src="<?php bloginfo('template_directory'); ?>./Assets/Images/element1home.png" alt="" srcset="">
                                 <?php echo $feature['link_text']; ?><i class="bi bi-chevron-right"></i>
@@ -135,48 +117,30 @@ $story = get_field("stories");
                         <img class="mt-5 pt-5" src="<?php bloginfo('template_directory'); ?>./Assets/Images/element3home.png" alt="">
                     </div>
                     <?php query_posts(array('post_type' => 'destinations')); ?>
-                <?php
-                     while (have_posts()) : the_post(); ?>
-         
-                            <div class="col-xxl col-lg-auto mt-5  d-flex justify-content-center">
-                                <div class=" card border-0 featureimage" style="width: 14.3rem;  height:  18.75rem;">
-                                    <a href="<?php  the_permalink(); ?>">
-                                        <?php the_post_thumbnail(); ?>
-                                    </a>
-                                    <div class="card-img-overlay  p-0 d-flex align-items-end">
-                                        <div class=" des bg-white pe-5 featureplace ps-1  rounded-top">
-                                            <h5 class="m-0 pt-2 text-dark"><a href="<?php the_permalink(); ?>"><?php  the_title(); ?></a></h5>
-                                            <p class="m-0"><?php the_excerpt(); ?></p>
-                                        </div>
+                    <?php
+                     while (have_posts()) : the_post(); ?>        
+                        <div class="col-xxl col-lg-auto mt-5  d-flex justify-content-center">
+                            <div class=" card border-0 featureimage" style="width: 14.3rem;  height:  18.75rem;">
+                                <a href="<?php  the_permalink(); ?>">
+                                    <?php the_post_thumbnail(); ?>
+                                </a>
+                                <div class="card-img-overlay  p-0 d-flex align-items-end">
+                                    <div class=" des bg-white pe-5 featureplace ps-1  rounded-top">
+                                        <h5 class="m-0 pt-2 text-dark"><a href="<?php the_permalink(); ?>"><?php  the_title(); ?></a></h5>
+                                        <p class="m-0"><?php the_excerpt(); ?></p>
                                     </div>
                                 </div>
                             </div>
-
-
-                        <?php endwhile; ?>
-                        
-                    
-
+                        </div>
+                    <?php endwhile; ?>                                          
                 </div>
             </div>  
-        <?php
-
-        endif;
-
-    ?>
-    
-    
-        
-  
-
+        <?php endif; ?>
 
     <!-- Guide -->
-
     <div class="container my-5 py-5" id="partner">
         <div class="row guide pt-5">
-
-            <div
-                class="col-xxl-6 col-lg-6 col-md-12 guidetext text-xxl-start text-xl-start text-lg-start text-md-center text-sm-center text-center align-self-center">
+            <div class="col-xxl-6 col-lg-6 col-md-12 guidetext text-xxl-start text-xl-start text-lg-start text-md-center text-sm-center text-center align-self-center">
                 <div class="d-flex justify-content-start mx-5 py-5 px-5">
                     <img src="<?php bloginfo('template_directory'); ?>./Assets/Images/element1home.png" alt="" srcset="">
                 </div>
@@ -193,7 +157,6 @@ $story = get_field("stories");
                 </div>
                 <div class="d-flex justify-content-end mx-5 px-5">
                     <img src="<?php bloginfo('template_directory'); ?>./Assets/Images/element3home.png" alt="" srcset="">
-
                 </div>
             </div>
             <div class="col-xxl-6 col-lg-6 col-md-12 guideimage">
@@ -203,15 +166,12 @@ $story = get_field("stories");
     </div>  
 
     <!-- Testinomial -->
-    
-
     <div class="container testimonials my-5 py-5">
         <div class="row mx-5 testimonial ">
             <div class="col  d-flex justify-content-md-center justify-content-lg-start justify-content-xxl-start  testimonialhead">
                 <p class="h1"><?php echo $testimonial['main_title']; ?></p>
             </div>
         </div>
-
         <div class="row">
             <div class="col-auto  pe-4 align-self-center">
                 <img src="<?php bloginfo('template_directory'); ?>./Assets/Images/testiimagelement1.svg" alt="" srcset="">
@@ -243,13 +203,13 @@ $story = get_field("stories");
                             <div class="row h-100">
                                 <div class="col-auto cardleft">
                                     <div class="cardplus">
-                                        <img src="./Assets/Images/testiimagelement.svg" alt="" srcset="">
+                                        <img src="<?php bloginfo('template_directory'); ?>./Assets/Images/testiimagelement.svg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="col cardright">
                                     <div class="row">
                                         <div class="col  cardcircle">
-                                            <img src="./Assets/Images/testiimagelement2.svg" alt=""
+                                            <img src="<?php bloginfo('template_directory'); ?>./Assets/Images/testiimagelement2.svg" alt=""
                                                 srcset="">
                                         </div>
 
@@ -276,11 +236,8 @@ $story = get_field("stories");
               </div>
         </div>
     </div>
-    
-
 
     <!-- Stories -->
-
         <div class="container trending my-5 py-5">
             <div class="row mx-5  ">
                 <div class="col-xxl col-lg-6 col-md-12  d-flex justify-content-md-center justify-content-lg-start justify-content-xxl-start  trendhead">
@@ -288,16 +245,10 @@ $story = get_field("stories");
                 </div>
                 <div class="col-xxl col-lg-6 col-md-12 d-flex justify-content-end trendview">
                     <?php if($story['view_link']):?>
-                            <!-- <a href="" class="text-warning"><img class="mx-5 px-5  pb-5" src="<?php //bloginfo('template_directory'); ?>./Assets/Images/element1home.png" alt="" srcset="">
-                                <?php //echo $feature['link_text']; ?><i class="bi bi-chevron-right"></i>
-                                
-                            </a> -->
                             <a href="<?php echo $story['view_link']; ?>" class="text-warning">
                             <?php echo $story['view']; ?>
                             <i class="bi bi-chevron-right"></i></a>
-                        <?php endif; ?>
-                    
-                    
+                        <?php endif; ?>                                   
                 </div>
             </div>
 
@@ -310,8 +261,6 @@ $story = get_field("stories");
                       $front_page_query = new WP_Query( $args );?>
                 <?php
                      while  ( $front_page_query->have_posts() ) : $front_page_query->the_post();; ?>
-
-
                         <div class="col-xxl col-lg-auto mt-5 pt-3 pe-2 p-0 d-flex justify-content-center">
                             <div class="card border-0 rounded-3" style="width: 15.6rem;  height:  27.75rem;">
                                 <div class="card-body">
@@ -324,14 +273,7 @@ $story = get_field("stories");
                                 </div>
                             </div>
                         </div>
-
                 <?php endwhile;?>
-                    
-                   
-                    
-              
-
             </div>
         </div>  
-
 <?php  get_footer(); ?>

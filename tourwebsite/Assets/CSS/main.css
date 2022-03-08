@@ -27,8 +27,11 @@ nav .navbar-nav .nav-item {
 
 nav .navbar-nav .nav-item a {
   margin: 0vw 1vw;
-  font-size: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter";
+  font-style: none;
+  font-weight: none;
+  font-size: 16px;
+  line-height: 19.36px;
 }
 
 .login {
@@ -55,7 +58,7 @@ nav .navbar-nav .nav-item a {
 }
 
 .a1 a {
-  color: #000;
+  color: #B8BECD;
 }
 
 .a1 a:hover {
@@ -63,7 +66,7 @@ nav .navbar-nav .nav-item a {
 }
 
 .active a {
-  color: #000;
+  color: black;
   font-weight: bold;
 }
 
@@ -97,10 +100,12 @@ nav .navbar-nav .nav-item a {
 }
 
 .homepage .explore p {
-  font-family: 'Playfair Display', serif;
-  font-size: 64px;
+  font-family: "Playfair Display";
+  font-style: "normal";
   font-weight: bold;
+  font-size: 64px;
   line-height: 80px;
+  color: black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -113,12 +118,12 @@ nav .navbar-nav .nav-item a {
 }
 
 .homepage .holiday h3 {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
-  color: #000;
+  color: black;
 }
 
 .homepage .holiday hr {
@@ -134,12 +139,12 @@ nav .navbar-nav .nav-item a {
 .homepage .selector .alink a {
   border-radius: 8px;
   background-color: #FB8F1D;
-  color: #fff;
-  font-family: 'Inter';
-  font-style: normal;
+  color: white;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 16px;
-  /* line-height: 60px; */
+  line-height: 24px;
   padding: 0.5vw 4vw;
 }
 
@@ -168,17 +173,17 @@ nav .navbar-nav .nav-item a {
 }
 
 .second .secondtext .h2 {
-  font-family: 'Playfair Display';
-  font-style: normal;
+  font-family: "Playfair Display";
+  font-style: "normal";
   font-weight: bold;
   font-size: 36px;
   line-height: 50px;
-  color: #000;
+  color: black;
 }
 
 .second .secondtext p {
-  font-family: 'Mulish';
-  font-style: normal;
+  font-family: "Mulish";
+  font-style: "normal";
   font-weight: 300;
   font-size: 19px;
   line-height: 30px;
@@ -188,12 +193,12 @@ nav .navbar-nav .nav-item a {
 .second .secondtext a {
   border-radius: 8px;
   background-color: #FB8F1D;
-  color: #fff;
-  font-family: 'Inter';
-  font-style: normal;
+  color: white;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 16px;
-  /* line-height: 60px; */
+  line-height: 24px;
   padding: 0.5vw 3vw;
 }
 
@@ -206,17 +211,17 @@ nav .navbar-nav .nav-item a {
 }
 
 .features .featureshead .h1 {
-  font-family: 'Playfair Display';
-  font-style: normal;
+  font-family: "Playfair Display";
+  font-style: "normal";
   font-weight: bold;
   font-size: 36px;
   line-height: 50px;
-  color: #000;
+  color: black;
 }
 
 .features .featureview a {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 17px;
   line-height: 60px;
@@ -227,8 +232,8 @@ nav .navbar-nav .nav-item a {
 }
 
 .featureimg .featureplace h5 {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 17px;
   line-height: 25px;
@@ -240,8 +245,8 @@ nav .navbar-nav .nav-item a {
 }
 
 .featureimg .featureplace p {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 17px;
   line-height: 25px;
@@ -257,17 +262,17 @@ nav .navbar-nav .nav-item a {
 }
 
 .guide .guidetext .h2 {
-  font-family: 'Playfair Display';
-  font-style: normal;
+  font-family: "Playfair Display";
+  font-style: "normal";
   font-weight: bold;
   font-size: 42px;
   line-height: 50px;
-  color: #000;
+  color: black;
 }
 
 .guide .guidetext p {
-  font-family: 'Mulish';
-  font-style: normal;
+  font-family: "Mulish";
+  font-style: "normal";
   font-weight: 300;
   font-size: 19px;
   line-height: 30px;
@@ -277,12 +282,12 @@ nav .navbar-nav .nav-item a {
 .guide .guidetext a {
   border-radius: 8px;
   background-color: #FB8F1D;
-  color: #fff;
-  font-family: 'Inter';
-  font-style: normal;
+  color: white;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 16px;
-  /* line-height: 60px; */
+  line-height: 24px;
   padding: 0.5vw 3vw;
 }
 
@@ -295,35 +300,36 @@ nav .navbar-nav .nav-item a {
 }
 
 .testimonials .testimonial .testimonialhead p {
-  font-family: 'Playfair Display';
-  font-style: normal;
+  font-family: "Playfair Display";
+  font-style: "normal";
   font-weight: bold;
   font-size: 36px;
   line-height: 50px;
 }
 
 .testimonials .test .testtext .testpara p {
-  font-family: 'Mulish';
-  font-style: normal;
+  font-family: "Mulish";
+  font-style: "normal";
   font-weight: normal;
   font-size: 26px;
   line-height: 36px;
-  color: #000;
+  color: black;
 }
 
 .testimonials .test .testtext .testname .h1 {
-  font-family: Inter;
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: bolder;
   font-size: 24px;
   line-height: 48px;
 }
 
 .testimonials .test .testtext .testname p {
-  font-family: Inter;
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: normal;
   font-size: 18px;
+  line-height: 24px;
   color: rgba(0, 0, 0, 0.85);
 }
 
@@ -449,17 +455,17 @@ nav .navbar-nav .nav-item a {
 }
 
 .trending .trendhead .h1 {
-  font-family: ' Playfair Display';
-  font-style: normal;
+  font-family: " Playfair Display";
+  font-style: "normal";
   font-weight: bold;
   font-size: 36px;
   line-height: 50px;
-  color: #000000;
+  color: black;
 }
 
 .trending .trendview a {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 17px;
   line-height: 60px;
@@ -485,18 +491,18 @@ nav .navbar-nav .nav-item a {
 }
 
 .trending .card .card-body h3 {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: bolder;
-  color: #000;
   font-size: 20px;
   line-height: 30px;
+  color: black;
   mix-blend-mode: normal;
 }
 
 .trending .card .card-body p {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
@@ -526,8 +532,8 @@ nav .navbar-nav .nav-item a {
 .footer .footers .foottext .p1 {
   padding-right: 10vw;
   margin-bottom: 3vw;
-  font-family: 'Mulish';
-  font-style: normal;
+  font-family: "Mulish";
+  font-style: "normal";
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
@@ -540,24 +546,24 @@ nav .navbar-nav .nav-item a {
 }
 
 .footer .footers .foottext .p2 {
-  font-family: 'Mulish';
-  font-style: normal;
+  font-family: "Mulish";
+  font-style: "normal";
   font-weight: 300;
   font-size: 17px;
   line-height: 28px;
 }
 
 .footer .footers .footlist h5 {
-  font-family: 'Mulish';
-  font-style: normal;
+  font-family: "Mulish";
+  font-style: "normal";
   font-weight: bold;
   font-size: 19px;
   line-height: 60px;
 }
 
 .footer .footers .footlist ul li a {
-  font-family: 'Mulish';
-  font-style: normal;
+  font-family: "Mulish";
+  font-style: "normal";
   font-weight: 300;
   font-size: 18px;
   line-height: 38px;
@@ -571,7 +577,7 @@ nav .navbar-nav .nav-item a {
 
 .footer .footers .social a i {
   font-style: normal;
-  color: #000;
+  color: black;
 }
 
 .footer .footers .social a i:hover {
@@ -589,8 +595,8 @@ nav .navbar-nav .nav-item a {
 }
 
 .Destpost h5 {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 25px;
   line-height: 25px;
@@ -602,8 +608,8 @@ nav .navbar-nav .nav-item a {
 }
 
 .Destpost p {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
@@ -620,8 +626,8 @@ nav .navbar-nav .nav-item a {
 }
 
 .storypost h5 {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
@@ -635,11 +641,11 @@ nav .navbar-nav .nav-item a {
 
 .storypost p {
   margin: 0 9vw;
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: "Inter";
+  font-style: "normal";
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
   color: #80918E;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
