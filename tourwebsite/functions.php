@@ -2,7 +2,7 @@
 //CSS
 function add_css()
 {
-   wp_register_style('font', get_template_directory_uri() . './Assets/CSS/main.css', false,'1.1','all');
+   wp_register_style('font', get_template_directory_uri() . './Assets/Build/css/main.css', false,'1.1','all');
    wp_enqueue_style( 'font');
 }
 add_action('wp_enqueue_scripts', 'add_css');//hook function
@@ -21,7 +21,7 @@ function add_nav_menu(){
     
     register_nav_menus(array(
         "primary-menu" => __("Primary Menu" , 'text_domain'),
-        "secondary-menu" => __("Secondary Menu" , 'text_domain'),
+       
     ));
 }
 add_action('init' , 'add_nav_menu');
