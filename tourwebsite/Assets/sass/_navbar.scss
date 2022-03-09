@@ -1,0 +1,78 @@
+@import '_functions.scss' ;
+@import '_variables.scss' ;
+
+
+nav{
+    margin: 2vw 8vw;
+    .al{
+        text-align: center;
+        &:hover{
+            border-bottom: 1px solid $orange;
+            transform:scale(0.9);
+        }
+    }
+   .navbar-nav {
+       text-align: center;
+    .nav-item{
+        text-align: center;
+        a{ 
+            margin : 0vw 1vw;
+            @include Font-Adjustment('Inter' ,none , none,  16px , 19.36px );
+        }       
+    }}
+   }
+   .login{
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid $orange ;
+    border-radius: 8px;
+    padding: 0vw 2vw;
+    a{
+        @include Color($orange , $white);  
+    }
+    &:hover{
+        background-color: $orange;
+        border-radius: 8px;
+        transform:scale(0.9);
+        a{
+            @include Color( $white , $orange); 
+        }
+    }
+}
+.a1{
+    a{
+        @include Color($navcolor , $white);  
+        &:hover{
+            @include Color($orange , $white);  
+        }
+    }   
+}
+.active{
+    a{
+        @include Color($black , $white);  
+        font-weight: bold;
+        &:hover{
+            @include Color($orange , $white);  
+        }
+    }
+}
+.register{
+    text-decoration: none;
+    text-align: center;
+    background-color: $orange;
+    border: 1px solid $orange ;
+    border-radius: 8px;
+    margin-left: 0.5vw;
+    padding: 0vw 2vw;
+    a{
+    color: $white;
+    }
+    &:hover{
+        background-color: $white;
+        border-radius: 8px;
+        transform:scale(0.9);
+        a{
+        color: $orange;
+        }
+    }
+}

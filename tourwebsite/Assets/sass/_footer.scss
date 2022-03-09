@@ -1,0 +1,51 @@
+// Footer
+.footer{
+    @include imageSize(100vw,100%);
+    background-color: $offwhite;
+    .footers{
+        padding: 6vw 11vw ;
+        .foottext{
+            img{
+                margin: 1vw 0vw;
+            }
+            .p1{
+                padding-right: 10vw;
+                margin-bottom: 3vw;
+                @include Font-Adjustment('Mulish', 'normal', 300 , 18px , 28px );
+                @media (max-width: 1198px) {
+                    padding-right: 0vw; 
+                }
+            }
+            .p2{
+                @include Font-Adjustment('Mulish', 'normal', 300 , 17px , 28px );
+            }
+        }
+        .footlist{
+            h5{
+                @include Font-Adjustment('Mulish', 'normal', bold , 19px , 60px );
+            }
+            ul{
+                li{
+                    a{
+                        @include Font-Adjustment('Mulish', 'normal', 300 , 18px , 38px );
+                        @include Color($grey1 , $white); 
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .social{
+            a{
+                text-decoration: none;
+                i{
+                    font-style: normal;
+                    @include Color($black , $white);  
+                    &:hover{
+                        @include Color($orange , $white);  
+                        transform: scale(1.1);
+                    }
+                }    
+            }
+        }
+    } 
+}
