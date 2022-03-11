@@ -8,6 +8,7 @@
     margin-top: 2vw;
 }
 
+//navbar
 @import '_navbar.scss' ;
 
 //home
@@ -273,7 +274,8 @@
             @include Font-Adjustment('Inter', 'normal', 600 , 17px , 60px );
             @include Color( $orange, $white);
         }
-    }
+    }   
+    
     .card{
         .card-img-top {
             @include imageSize(100%, 12.6rem);

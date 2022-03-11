@@ -10,9 +10,7 @@ add_action('wp_enqueue_scripts', 'add_css');//hook function
 // Google Fonts
 function wpb_add_google_fonts() {
     wp_enqueue_style( 'wpb-google-fontsfirst', 'https://fonts.googleapis.com/css2?family=Inter|Playfair+Display|Mulish:wght@100&display=swap', false );
-    
-
-    }
+}
     
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
@@ -25,22 +23,16 @@ function add_nav_menu(){
     ));
 }
 add_action('init' , 'add_nav_menu');
-
 function add_link_atts($atts){
     $atts['class'] = 'nav-link ';
     return $atts;
 }
 add_filter('nav_menu_link_attributes','add_link_atts');
-
 function add_list_atts($atts){
     $atts['class'] = 'nav-item al';
     return $atts;
 }
-
 add_filter('nav_menu_css_class','add_list_atts');
-
-
-
 //Register Footer
 function my_widgets_init() {
 
@@ -102,14 +94,9 @@ function my_widgets_init() {
 	);
 }
 add_action( 'widgets_init', 'my_widgets_init' );
-
-
-
 //Custom Post Type
-
 add_theme_support('post-thumbnails');
 add_action('init', 'create_custom_post_type');
- 
 function create_custom_post_type() {
 $labels = array(
 	'name' => _x( 'Destinations', 'destinations' ),

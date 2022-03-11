@@ -9,8 +9,6 @@
     height: $height;
     width: $width;
 }
-
-
 @mixin Color($fontColor , $backColor) {
     background-color: $backColor;
     color: $fontColor;
