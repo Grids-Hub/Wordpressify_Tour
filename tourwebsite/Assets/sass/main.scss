@@ -3,14 +3,13 @@
 @import '_variables.scss' ;
 
 //body css
-.body{
+body{
     margin: 0;
     margin-top: 2vw;
+    //background-color: $black;
 }
-
 //navbar
 @import '_navbar.scss' ;
-
 //home
 .homepage{
     .explore{
@@ -58,8 +57,6 @@
         }
     }
 }
-
-
 //Second
 .second{
     .secondimage{
@@ -107,7 +104,6 @@
         }
     }
 }
-
 .featureimg{
     .featureimage{
         img {
@@ -128,8 +124,6 @@
         }
     }
 }
-
-
 //Guide
 .guide{
     .guideimage{
@@ -162,7 +156,6 @@
         }
     }
 }
-
 //Testimonial
 .testimonials{
     .testimonial{
@@ -275,7 +268,6 @@
             @include Color( $orange, $white);
         }
     }   
-    
     .card{
         .card-img-top {
             @include imageSize(100%, 12.6rem);
@@ -303,9 +295,7 @@
         }
     }
 }
-
 @import '_footer.scss';
-
 //Wordpress Styling
 .Single-page-content{
     text-align: center; 
@@ -324,7 +314,6 @@
         @include Color( $grey, $white);
     }
 }
-
 .storypost{
     text-align: center;
     img{
