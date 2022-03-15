@@ -1,32 +1,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour</title>
-
-    <!-- Bootstrap CSS -->
-    
-
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <!-- Bootstrap-Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    
-   
-    
-    
-    <!-- Custom CSS -->
     <?php wp_head();?>
 </head>
-
 <body>
     <!-- Header -->
     <header class="ms-xxl-5 ms-lg-3" >
@@ -38,20 +19,15 @@
                     <span class="navbar-toggler-icon"><i class="bi bi-three-dots-vertical"></i></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNav">
-
                 <?php
-
                 if(has_nav_menu('primary-menu')){
                     wp_nav_menu(array(
                         "theme_location" => 'primary-menu',
                         'container' => "" ,
-                        'items_wrap' => '<ul class="navbar-nav ms-auto Navbar">%3$s</ul>'
-                        
+                        'items_wrap' => '<ul class="navbar-nav ms-auto  Navbar">%3$s</ul>'  
                     ));
                 }
-                 ?>
-                    
-                   
+                 ?>                 
                 </div>
             </div>
         </nav>

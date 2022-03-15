@@ -7,7 +7,8 @@ const browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 gulp.task('serve' , function(){
     browserSync.init( {
-        proxy : "http://localhost/wordpress",  
+        proxy : "http://localhost/wordpress",
+        notify:false,
     });
     gulp.watch('./Assets/sass/*.scss' , gulp.series('style'))
     gulp.watch('./Assets/JS/*.js' , gulp.series('JS'))
@@ -19,15 +20,12 @@ gulp.task('style' , function(){
     .pipe(sass()) //sass compiler
     .pipe(postcss(plugins)) //For minified code
     .pipe(gulp.dest('./Assets/Build/css')) // compiled css
-    .pipe(browserSync.stream());  
-});
+    .pipe(browserSync.stream());
+})
 gulp.task('JS' , function(){
     return gulp.src('./Assets/JS/*.js')
       .pipe(terser())
       .pipe(gulp.dest('./Assets/Build/js'))
       .pipe(browserSync.stream());
-}) ;
+}) 
 gulp.task('default', gulp.series('serve' ));
-
-
-

@@ -18,31 +18,17 @@
 ?>
 
 <?php get_header(); ?>
-
-
-
 <div class="row">
-
     <?php $args = array ('category_name' => 'Blog');
-
         $front_page_query = new WP_Query( $args );?>
-        <?php
-            while  ( $front_page_query->have_posts() ) : $front_page_query->the_post();; ?>
+        <?php  while  ( $front_page_query->have_posts() ) : $front_page_query->the_post();; ?>
                 <div class="col-6 my-5 storypost">
-                    <a href="<?php  the_permalink(); ?>">
-                        <?php the_post_thumbnail(); ?>
-                    </a>
-
+                    <a href="<?php  the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                     <div class="mt-3">
                         <h5 class=""><a href="<?php the_permalink(); ?>"><?php  the_title(); ?></a></h5>
                         <?php the_excerpt(); ?>
                     </div>
                 </div>
-            
-
-        
         <?php endwhile; ?>
-
 </div>
-
 <?php get_footer();?>

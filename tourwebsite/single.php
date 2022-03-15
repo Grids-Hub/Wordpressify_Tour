@@ -1,13 +1,10 @@
 <?php  get_header(); ?>
-
 <?php  wp_head(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
           <div class="container-fluid">
             <div class = "Single-page-content">
               <div>
-                <h2>
-                  <?php  the_title(); ?>
-                </h2>
+                <h2><?php  the_title(); ?></h2>
               </div>
               <div>
                 <?php  the_post_thumbnail(); ?>
@@ -17,15 +14,13 @@
                 <?php  echo get_the_date(); ?>
               </div>
               <div>
-              <p> <?php  the_excerpt(); ?> </p>
+                <p> <?php  the_excerpt(); ?> </p>
               </div>
               <div>
-                <p>
-                  <?php  the_content(); ?>
-                </p>
+                <p><?php  the_content(); ?> </p>
               </div>
               <div>
-              <?php if (comments_open()){comments_template();} ?>
+                <?php if (comments_open()){comments_template();} ?>
               </div>
             </div>
           </div>

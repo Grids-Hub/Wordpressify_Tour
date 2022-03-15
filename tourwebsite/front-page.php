@@ -55,8 +55,6 @@ $story = get_field("stories");
             </div>
         </div>
     </div> 
-
-
     <!-- Second Page -->
     <div class="container my-5 py-5" id="about">
         <div class="row second pt-5">
@@ -90,7 +88,6 @@ $story = get_field("stories");
             </div>
         </div>
     </div>  
-
     <!-- Feature Destination -->
     <?php
         // check if the repeater field has rows of data
@@ -164,7 +161,6 @@ $story = get_field("stories");
             </div>
         </div>
     </div>  
-
     <!-- Testinomial -->
     <div class="container testimonials my-5 py-5">
         <div class="row mx-5 testimonial ">
@@ -236,7 +232,6 @@ $story = get_field("stories");
               </div>
         </div>
     </div>
-
     <!-- Stories -->
         <div class="container trending my-5 py-5">
             <div class="row mx-5  ">
@@ -275,14 +270,14 @@ $story = get_field("stories");
                         </div>
                 <?php endwhile;?>
             </div>
+            
         </div>  
-
-
-    <div class="container-fluid">
-        <div class = "justify-content-end">
-            <button id = "back-to-top">
-                Hello
-            </button>
+        <div class="container-fluid">
+            <div class = " d-flex justify-content-end">
+                <button id = "back-to-top">
+                    <i class="bi bi-chevron-double-up"></i>
+                </button>
+            </div>
         </div>
-    </div>
+    
 <?php  get_footer(); ?>
