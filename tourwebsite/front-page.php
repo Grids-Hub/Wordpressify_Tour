@@ -11,7 +11,7 @@ $story = get_field("stories");
 
         <div class="row">
             <div class="col-auto mb-xl-5  pb-xl-5 mb-sm-0 pb-sm-0 mb-0 pb-0 align-self-center ">
-                <img src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element2home.png" alt="">
+                <img src="<?php bloginfo('template_directory'); ?>./assets/build/images/element2home.png" alt="">
             </div>
             <div class="col">
                 <div class="row homepage">
@@ -41,12 +41,12 @@ $story = get_field("stories");
                             </div>
 
                             <div class="d-flex justify-content-end">
-                                <img src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element1home.png" alt="">
+                                <img src="<?php bloginfo('template_directory'); ?>./assets/build/images/element1home.png" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-xxl-6 col-lg-6 col-md-12 image ">
-                        <img src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element3home.png" alt="">
+                        <img src="<?php bloginfo('template_directory'); ?>./assets/build/images/element3home.png" alt="">
                         <img class="img-responsive img " src="<?php echo $homepage['image'];?>" alt="">
 
                     </div>
@@ -68,7 +68,7 @@ $story = get_field("stories");
 
                 </p>
                 <div class="d-flex justify-content-end mx-5 px-5">
-                    <img class="mx-5 px-5" src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element1home.png" alt="" srcset="">
+                    <img class="mx-5 px-5" src="<?php bloginfo('template_directory'); ?>./assets/build/images/element1home.png" alt="" srcset="">
 
                 </div>
                 <div class="d-flex justify-content-center justify-content-xl-start justify-content-lg-start">
@@ -101,7 +101,7 @@ $story = get_field("stories");
                     </div>
                     <div class="col-xxl col-lg-6 col-md-12 d-flex justify-content-end featureview">
                         <?php if($feature['link']):?>
-                            <a href="<?php echo $feature['link']; ?>" class="text-warning"><img class="mx-5 px-5  pb-5" src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element1home.png" alt="" srcset="">
+                            <a href="<?php echo $feature['link']; ?>" class="text-warning"><img class="mx-5 px-5  pb-5" src="<?php bloginfo('template_directory'); ?>./assets/build/images/element1home.png" alt="" srcset="">
                                 <?php echo $feature['link_text']; ?><i class="bi bi-chevron-right"></i>
                                 
                             </a>
@@ -110,7 +110,7 @@ $story = get_field("stories");
                 </div>
                 <div class="row featureimg">
                     <div class="col-auto align-self-center ">
-                        <img class="mt-5 pt-5" src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element3home.png" alt="">
+                        <img class="mt-5 pt-5" src="<?php bloginfo('template_directory'); ?>./assets/build/images/element3home.png" alt="">
                     </div>
                     <?php query_posts(array('post_type' => 'destinations')); ?>
                     <?php
@@ -138,7 +138,7 @@ $story = get_field("stories");
         <div class="row guide pt-5">
             <div class="col-xxl-6 col-lg-6 col-md-12 guidetext text-xxl-start text-xl-start text-lg-start text-md-center text-sm-center text-center align-self-center">
                 <div class="d-flex justify-content-start mx-5 py-5 px-5">
-                    <img src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element1home.png" alt="" srcset="">
+                    <img src="<?php bloginfo('template_directory'); ?>./assets/build/images/element1home.png" alt="" srcset="">
                 </div>
                 <p class="h2 mx-xl-5 pe-xl-5 p-0"><?php echo $guide['title']; ?> </p>
                 <p class=" mx-xl-5 pe-xl-5 p-0"><?php echo $guide['para']; ?>
@@ -152,7 +152,7 @@ $story = get_field("stories");
                     <?php endif; ?>
                 </div>
                 <div class="d-flex justify-content-end mx-5 px-5">
-                    <img src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element3home.png" alt="" srcset="">
+                    <img src="<?php bloginfo('template_directory'); ?>./assets/build/images/element3home.png" alt="" srcset="">
                 </div>
             </div>
             <div class="col-xxl-6 col-lg-6 col-md-12 guideimage">
@@ -169,7 +169,7 @@ $story = get_field("stories");
         </div>
         <div class="row">
             <div class="col-auto  pe-4 align-self-center">
-                <img src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/testiimagelement1.svg" alt="" srcset="">
+                <img src="<?php bloginfo('template_directory'); ?>./assets/build/images/testiimagelement1.svg" alt="" srcset="">
             </div>
             <div class="col row test mt-5">
                 <div class="col-xxl-6 col-lg-6 col-md-12 testtext text-xxl-start text-xl-start text-lg-start text-md-center text-sm-center text-center align-self-center">
@@ -198,13 +198,13 @@ $story = get_field("stories");
                             <div class="row h-100">
                                 <div class="col-auto cardleft">
                                     <div class="cardplus">
-                                        <img src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/testiimagelement.svg" alt="" srcset="">
+                                        <img src="<?php bloginfo('template_directory'); ?>./assets/build/images/testiimagelement.svg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="col cardright">
                                     <div class="row">
                                         <div class="col  cardcircle">
-                                            <img src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/testiimagelement2.svg" alt=""
+                                            <img src="<?php bloginfo('template_directory'); ?>./assets/build/images/testiimagelement2.svg" alt=""
                                                 srcset="">
                                         </div>
 
@@ -235,7 +235,7 @@ $story = get_field("stories");
         <div class="container trending my-5 py-5">
             <div class="row mx-5  ">
                 <div class="col-xxl col-lg-6 col-md-12  d-flex justify-content-md-center justify-content-lg-start justify-content-xxl-start  trendhead">
-                    <p class="h1"><?php echo $story['main_title']; ?><img class="mx-5 px-5  pb-5" src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element3home.png" alt="" srcset=""></p>
+                    <p class="h1"><?php echo $story['main_title']; ?><img class="mx-5 px-5  pb-5" src="<?php bloginfo('template_directory'); ?>./assets/build/images/element3home.png" alt="" srcset=""></p>
                 </div>
                 <div class="col-xxl col-lg-6 col-md-12 d-flex justify-content-end trendview">
                     <?php if($story['view_link']):?>
@@ -248,7 +248,7 @@ $story = get_field("stories");
 
             <div class="row ">
                 <div class="col-auto align-self-center mt-5 p-0">
-                    <img class="mt-5 pt-5 me-5 " src="<?php bloginfo('template_directory'); ?>./Assets/Build/Images/element1home.png" alt="">
+                    <img class="mt-5 pt-5 me-5 " src="<?php bloginfo('template_directory'); ?>./assets/build/images/element1home.png" alt="">
                 </div>
                <?php $args = array ('category_name' => 'Blog');
 
