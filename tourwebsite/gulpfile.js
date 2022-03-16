@@ -14,6 +14,12 @@ gulp.task('serve' , function(){
     gulp.watch('./Assets/JS/*.js' , gulp.series('JS'))
     gulp.watch('./*.php').on('change' , reload);
 });
+
+gulp.task('build-images-dev', function() {
+    return gulp.src(['./Assets/Images/*.{jpeg,png,svg}'])
+        .pipe(gulp.dest('./Assets/Build/Images'));
+  });
+ 
 gulp.task('style' , function(){
     let plugins = [cssnano()];
     return gulp.src('./Assets/sass/*.scss') //scss file location
@@ -28,4 +34,4 @@ gulp.task('JS' , function(){
       .pipe(gulp.dest('./Assets/Build/js'))
       .pipe(browserSync.stream());
 }) 
-gulp.task('default', gulp.series('serve' ));
+gulp.task('default', gulp.series( 'build-images-dev' ,  'serve' ));
