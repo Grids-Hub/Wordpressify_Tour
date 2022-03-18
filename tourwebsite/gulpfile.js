@@ -19,7 +19,7 @@ gulp.task('style' , function(){
     return gulp.src('./assets/sass/*.scss') //scss file location
     .pipe(sass()) //sass compiler
     .pipe(postcss(plugins)) //For minified code
-    .pipe(gulp.dest('./build/css')) // compiled css
+    .pipe(gulp.dest('./build/css/')) // compiled css
     .pipe(browserSync.stream());
 })
 gulp.task('images', function() {
@@ -32,4 +32,4 @@ gulp.task('js' , function(){
       .pipe(gulp.dest('./build/js'))
       .pipe(browserSync.stream());
 }) 
-gulp.task('default', gulp.series('images' , 'serve' ));
+gulp.task('default', gulp.series('images' , 'style', 'js' , 'serve' ));
