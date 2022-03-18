@@ -1,0 +1,1 @@
+var backTotopbtn=document.getElementById("back-to-top");function backTotop(){window.scrollTo(0,0)}backTotopbtn.addEventListener("click",backTotop);
