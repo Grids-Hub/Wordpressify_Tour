@@ -1,12 +1,12 @@
-
 @import '_functions.scss' ;
 @import '_variables.scss' ;
 
 //body css
+
 body{
     margin: 0;
     margin-top: 2vw;
-    //background-color: $black;
+    background-color: $white !important;
 }
 //navbar
 @import '_navbar.scss' ;
@@ -20,8 +20,8 @@ body{
             img{
                 padding: 1vw 0vw 1vw 7vw;
             }
-        }
-    }
+        } 
+     }
     .holiday{
         padding: 2vw 1vw 0vw;
         h3{

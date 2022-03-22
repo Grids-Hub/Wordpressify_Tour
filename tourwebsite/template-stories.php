@@ -13,10 +13,7 @@
  * @since 1.0
  * @version 1.0
  */
-
-
 ?>
-
 <?php get_header(); ?>
 <div class="row">
     <?php $args = array ('category_name' => 'Blog');

@@ -1,6 +1,5 @@
 theme/
-tour-website/
-build/
+dist/
 node_modules/
 twentytwenty/
 twentytwentyone/

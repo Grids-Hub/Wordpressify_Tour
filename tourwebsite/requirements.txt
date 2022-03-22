@@ -1,0 +1,8 @@
+"browser-sync": "^2.27.7",
+"cssnano": "^5.1.1",
+"gulp": "^4.0.2",
+"gulp-postcss": "^9.0.1",
+"gulp-sass": "^5.1.0",
+"gulp-terser": "^2.1.0",
+"sass": "^1.49.9",
+"browserify": "^17.0.0"
